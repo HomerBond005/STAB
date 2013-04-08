@@ -48,6 +48,10 @@ public class STAB extends JavaPlugin {
 				}
 			}
 		});
+		Player[] onlinePlayers = Bukkit.getOnlinePlayers();
+		for(Player player : onlinePlayers){
+			addPlayer(player);
+		}
 	}
 
 	protected static void addPlugin(Plugin p, TabObject o){
